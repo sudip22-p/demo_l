@@ -7,7 +7,9 @@ try{
 FileInputStream fileIn = new FileInputStream("Student.ser");
 ObjectInputStream in = new ObjectInputStream(fileIn);
 e = (Student)in.readObject();
+  
 in.close();
+  
 fileIn.close();
 }catch(IOException i){
 i.printStackTrace();
